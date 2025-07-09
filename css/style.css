@@ -51,7 +51,6 @@ body {
 }
 .flower p {
     position: absolute;
-    color: #EA8A8A;
     font-weight: bold;
     font-size: 4em;
     /* 文字中央配置 */
@@ -60,6 +59,17 @@ body {
     transform: translate(-50%,-50%);
     margin:0;
     padding:0;
+}
+/* タイプライターカーソル */
+.typewriter-text {
+    position: relative; /* カーソルを配置するための基準 */
+}
+.typewriter-text::after {
+    content: '|'; /* カーソルの文字 */
+    display: inline-block;
+    color: #ddd; /* カーソルの色 */
+    animation: blink-caret 0.75s step-end infinite;
+    margin-left: 5px; /* 文字とカーソルの間のスペース */
 }
 .enter {
     margin: 50px;
